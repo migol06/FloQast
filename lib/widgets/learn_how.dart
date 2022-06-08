@@ -16,14 +16,14 @@ class LearnHow extends StatelessWidget {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
+            children: const [
+              Text(
                 'Learn How FloQast Can ',
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Text(
+              Text(
                 'Improve Your Month-End',
                 style: TextStyle(
                   color: Color.fromARGB(255, 139, 197, 64),

@@ -24,17 +24,7 @@ class HomeScreen extends StatelessWidget {
               bottom: height * .10,
               left: width * .15,
               child: Row(
-                children: [
-                  ScheduleDemo(
-                    child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text('Schedule A Demo'),
-                          Text('Learn More About FloQast'),
-                        ]),
-                  ),
-                  LearnHow()
-                ],
+                children: [ScheduleDemo(), LearnHow()],
               ))
         ],
       ),

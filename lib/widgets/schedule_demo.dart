@@ -1,16 +1,38 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:ppc/widgets/widgets.dart';
 
 class ScheduleDemo extends StatelessWidget {
-  const ScheduleDemo({Key? key, required this.child}) : super(key: key);
-  final Widget child;
+  const ScheduleDemo({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: child,
+      padding: const EdgeInsets.all(10),
       height: MediaQuery.of(context).size.height * .20,
       width: MediaQuery.of(context).size.width * .20,
-      decoration: BoxDecoration(color: Color.fromARGB(255, 139, 197, 64)),
+      decoration: const BoxDecoration(color: Color.fromARGB(255, 139, 197, 64)),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: const [
+          Flexible(
+            child: Text(
+              'Schedule A Demo',
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 30),
+            ),
+          ),
+          Flexible(
+            child: Text(
+              'Learn More About FloQast',
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
