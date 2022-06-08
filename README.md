@@ -2,4 +2,4 @@
 
 Coding Exam project.
 
-![FloQast](screenshot.png)
+![FloQast](screen_shot.png)
