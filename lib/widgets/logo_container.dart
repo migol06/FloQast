@@ -6,7 +6,7 @@ class LogoContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.all(10),
+      // padding: const EdgeInsets.all(10),
       width: MediaQuery.of(context).size.width * .55,
       height: MediaQuery.of(context).size.height * .30,
       decoration: BoxDecoration(

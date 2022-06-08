@@ -1,7 +1,4 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:ppc/widgets/widgets.dart';
 
 class ScheduleDemo extends StatelessWidget {
   const ScheduleDemo({Key? key}) : super(key: key);

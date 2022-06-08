@@ -19,12 +19,12 @@ class HomeScreen extends StatelessWidget {
                     image: AssetImage('ppc-floqast-banner.jpg'),
                     fit: BoxFit.fill)),
           ),
-          Positioned(top: height * .10, child: LogoContainer()),
+          Positioned(top: height * .10, child: const LogoContainer()),
           Positioned(
               bottom: height * .10,
               left: width * .15,
               child: Row(
-                children: [ScheduleDemo(), LearnHow()],
+                children: const [ScheduleDemo(), LearnHow()],
               ))
         ],
       ),
