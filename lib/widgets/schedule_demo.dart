@@ -18,17 +18,17 @@ class ScheduleDemo extends StatelessWidget {
         children: const [
           Flexible(
             child: Text(
-              'Schedule A Demo',
+              'SCHEDULE A DEMO',
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
-                  fontSize: 30),
+                  fontSize: 25),
             ),
           ),
           Flexible(
             child: Text(
               'Learn More About FloQast',
-              style: TextStyle(color: Colors.white, fontSize: 20),
+              style: TextStyle(color: Colors.white, fontSize: 12),
             ),
           ),
         ],

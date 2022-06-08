@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ppc/widgets/widgets.dart';
 
 class LearnHow extends StatelessWidget {
   const LearnHow({
@@ -8,29 +7,27 @@ class LearnHow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: const EdgeInsets.all(10),
       height: MediaQuery.of(context).size.height * .20,
       width: MediaQuery.of(context).size.width * .50,
       decoration: const BoxDecoration(color: Colors.white),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              Text(
-                'Learn How FloQast Can ',
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              Text(
-                'Improve Your Month-End',
-                style: TextStyle(
-                  color: Color.fromARGB(255, 139, 197, 64),
-                  fontWeight: FontWeight.bold,
-                ),
-              )
-            ],
+          Flexible(
+            child: RichText(
+              textAlign: TextAlign.center,
+              text: const TextSpan(children: <TextSpan>[
+                TextSpan(
+                    text: 'Learn How FloQast Can ',
+                    style: TextStyle(fontWeight: FontWeight.bold)),
+                TextSpan(
+                    text: "Improve Your Month-End",
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 139, 197, 64),
+                        fontWeight: FontWeight.bold)),
+              ]),
+            ),
           ),
           const SizedBox(
             height: 10,
@@ -38,21 +35,23 @@ class LearnHow extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const FTextField(hint: 'First Name'),
+              const Flexible(child: FTextField(hint: 'First Name')),
               const SizedBox(
                 width: 10,
               ),
-              const FTextField(hint: 'Email'),
+              const Flexible(child: FTextField(hint: 'Email')),
               const SizedBox(
                 width: 10,
               ),
-              ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  fixedSize: const Size(200, 50),
-                  primary: const Color.fromARGB(255, 139, 197, 64),
-                ).copyWith(elevation: ButtonStyleButton.allOrNull(0.0)),
-                child: const Text('SCHEDULE NOW'),
+              Flexible(
+                child: ElevatedButton(
+                  onPressed: () {},
+                  style: ElevatedButton.styleFrom(
+                    fixedSize: const Size(200, 50),
+                    primary: const Color.fromARGB(255, 139, 197, 64),
+                  ).copyWith(elevation: ButtonStyleButton.allOrNull(0.0)),
+                  child: const Text('SCHEDULE NOW'),
+                ),
               )
             ],
           )
