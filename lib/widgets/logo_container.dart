@@ -19,7 +19,6 @@ class LogoContainer extends StatelessWidget {
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(child: getLogo()),
             const Flexible(
@@ -47,7 +46,6 @@ class LogoContainer extends StatelessWidget {
   Row getLogo() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
-      // crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const Image(
           image: AssetImage(
